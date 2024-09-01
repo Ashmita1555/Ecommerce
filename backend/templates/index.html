@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{%block content%}
+<div class="background"style ="  background-image: url(/static/image/back1.jpg);">
+<div class="column" >
+<h6>"Together let's build your home."</h6>
+<p>With unlimites variety of durable and cozy products</p>
+<a href="{% url 'login' %}">
+<button type="button">Buy Now </button>
+</a>
+</div>
+</div>
+
+
+<div class="catagories">
+    <h5>Categories</h5>
+    <div class ="flex-container">
+    <div class="cata-items">
+        <a href="{% url 'login' %}">
+        <img src="/static/image/bed3.jpg" alt="" width="200px" height="200px"></a>
+        <p>Bed</p>
+    </div>
+    <div class="cata-items">
+        <a href="{% url 'login' %}">
+        <img src="/static/image/chair1.jpg" alt="" width="200px" height="200px"></a>
+        <p>Chair</p>
+        
+    </div>
+    <div class ="cata-items">
+        <a href="{% url 'login' %}">
+        <img src="/static/image/lamp1.jpg" alt="" width="200px" height="200px"></a>
+        <p>Lamp</p>
+ </div>
+ <div class ="cata-items">
+    <a href="{% url 'login' %}">
+    <img src="/static/image/sofa1.jpg" alt="" width="200px" height="200px"></a>
+    <p>sofa</p>
+    
+</div>
+<div class ="cata-items">
+    <a href="{% url 'login' %}">
+    <img src="/static/image/pic 1.jpg" alt="" width="200px" height="200px"></a>
+    <p>Wall Frame</p>
+    
+</div>
+</div>
+<div class="top-sale">
+    <h5>Top Sale</h5>
+    <div class ="flex-container">
+        <div class="sale-items">
+            <a href="{% url 'login' %}">
+            <img src="/static/image/bed5.jpg" alt="" width="200px" height="200px"></a>
+            <p class="sales">Classy wooden bed</p>
+            <p>Rs.30,000</p>
+            
+        </div>
+        <div class="sale-items">
+            <a href="{% url 'login' %}">
+            <img src="/static/image/chair2.jpg" alt="" width="200px" height="200px"></a>
+            <p class="sales"> Wing Chair</p>
+            <p>Rs.25,000</p>
+        </div>
+        <div class ="sale-items">
+            <a href="{% url 'login' %}">
+            <img src="/static/image/lamp3.jpg" alt="" width="200px" height="200px"></a>
+            <p class="sales"> Black hourse table lamp</p>
+            <p>Rs.10,000</p>
+     </div>
+     <div class ="sale-items">
+        <a href="{% url 'login' %}">
+        <img src="/static/image/sofa3.jpg" alt="" width="200px" height="200px"></a>
+        <p class="sales"> White luxury sofa</p>
+        <p>Rs.95,000</p>
+</div>
+<div class ="cata-items">
+    <a href="{% url 'login' %}">
+    <img src="/static/image/pic 5.jpg" alt="" width="200px" height="200px"></a>
+    <p>Wall Frame</p>
+   <p>Rs.3,000</p>
+   
+</div> 
+</div>   
+
+
+
+   
+
+
+ {%endblock %}
+</body>
+</html>

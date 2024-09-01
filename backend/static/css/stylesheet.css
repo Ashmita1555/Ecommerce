@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    
+  background-color: rgb(236, 245, 254);
+ 
+    }
+.navbar{
+width:100%;
+position :relative;
+display: flex;
+display:block;
+background-color: #3e695c;
+height: 45px;
+
+
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+.navbar .navigation{
+   display: flex;
+   display: inline-block;
+   margin-left: 500px;
+   }
+
+.navbar ul a {
+    float:left;
+    color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    display:inline;
+
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul a:hover{
+    background-color: rgb(160, 227, 230);
+    color:rgb(9, 8, 8);
+}
+.navbar ul a.active:hover{
+    background-color: rgb(160, 227, 230);
+    color:rgb(9, 8, 8); 
+}
+
+.navbar  ul a.active{
+    
+    color: rgb(236, 236, 243);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    
+    font-size: 21px;
+   
+}
+div.background{
+  
+    height: 800px;
+    background-size: cover;
+    }
+.column h6{
+    text-align: center;
+   font-size: 40px;
+ padding-top: 400px;
+   font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: aliceblue;
+}
+.column p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+button{
+    background-color: rgb(7, 39, 28);
+    text-align: center;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 10px 24px;
+    border-radius: 12px;
+    border: 2px solid rgb(121, 87, 153);
+    transition-duration: 0.5s;
+    margin-left: 650px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(7, 75, 75);
+    color: aliceblue;
+    
+}
+.row button{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.catagories{
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-left:10px ;
+    
+    flex-wrap: wrap;
+}
+.catagories h5:hover{
+background-color:rgb(236, 245, 254);
+height: 30px;
+width: 115px;
+height:50px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catagories h5{
+    margin-left: 600px;
+    margin-bottom: 30px;
+}
+
+.flex-container{
+   display: flex;
+    flex-direction:row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+   
+
+}
+
+@media(max-width:800px){
+    .flex-container{
+        flex-direction: row;
+    }
+}
+
+.cata-items{
+    flex-wrap: wrap;
+    background-color: rgb(232, 214, 192);
+  
+}
+.catagories .flex-container .cata-items:hover{
+    transition: 1s;
+    background-color: rgb(211, 175, 131);
+    transform: scale(1.2);
+}
+
+.top-sale{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+
+.top-sale h5:hover{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(236, 245, 254);
+    transition: width 1s;
+    
+    
+}
+.top-sale h5{
+    
+    
+    margin-left: 600px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.sale-items{
+    background-color: rgb(244, 224, 197);
+}
+.top-sale .flex-container{
+    font-size: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.top-sale .flex-container .sale-items{
+    flex-wrap: wrap;
+}
+.top-sale .flex-container .sale-items:hover{
+    
+        transition: 1s;
+        background-color: rgb(211, 175, 131);
+        transform: scale(1.2);
+    
+}
+#footer {
+    background-color: #dee5e7;
+    display: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 200px;
+    width: 75%;
+ }
+ #footer #footer-content {
+   
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 50%;
+    height: 100%;
+}
+ #footer #footer-content h2{
+    font-size: 35px;
+ }
+ #footer #footer-content p{
+    font-size: 25px;
+ }
+ #footer  #payment-partners h2{
+    font-size: 35px;
+    margin-top:10px;
+ }
+ #footer  #payment-partners .pay{
+    margin-top: 10px;
+ }
+#footer-link {
+    
+width:100%;
+position :relative;
+display: flex;
+display:block;
+background-color:  #3e695c;
+height: 45px;
+}
+ #footer-link ul {
+    display: flex;
+   
+}
+#footer-link ul li {
+    list-style: none;
+    justify-content: left;
+    float: right;
+    margin-left: 300px;
+}
+#footer-link ul li a {
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    display:inline;
+
+}
+#footer-link li a:hover{
+    background-color: rgb(128, 201, 201);
+    width: 250px;
+    height:35px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    
+
+
+
+
+

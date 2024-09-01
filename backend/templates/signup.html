@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+            text-align:center;
+        }
+        #login {
+            background-color: rgb(12, 95, 95);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            height: 550px;
+            width: 300px;
+            justify-content: center;
+            margin-top: 5px;
+            margin-left:600px;
+            
+            
+            outline: solid 1px rgb(19, 52, 10);
+            position: absolute;   
+        }
+        #login-form{
+            margin-top: 40px;
+            color:aliceblue ;
+            margin-left: 10px;
+            margin-top: 20px;
+            border-radius: 24px;
+        }
+        .input {
+           font-family:Times New Roman;
+            height: 40px;
+            margin: 20px;
+            justify-content: center;
+            font-size:20px;
+        }
+        #input{
+            justify-content: center;
+            border-radius: 12px;
+        }
+        .foot{
+            margin-top:700px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Signup</h1>
+<div id="login">
+    <form id="login-form" action="#" method="post">
+        {% csrf_token%}
+      <label for="fname"></label> FirstName:</label><br>
+       <input type="text"  id="fname" name="fname" ><br>
+       <label for="lname"></label> LastName:</label><br>
+       <input type="text"  id="lname" name="lname" ><br>
+       <label for="uname"></label> UserName:</label><br>
+       <input type="text"  id="uname" name="uname" ><br>
+      
+       <label for="email"></label> Email:</label><br>
+       <input type="text"  id="email" name="email" ><br>
+
+       <label for="Password"></label> Password:</label><br>
+       <input type="text"  id="Password" name="Password1" ><br>
+       <label for="Password"></label> Confirm Password:</label><br>
+       <input type="text"  id="Password" name="Password2" ><br>
+       <label for="address">Address :</label><br>
+     <input type ="text" name="address" id="address" >
+       <br>
+       <br>
+       <label for="gender"></label>
+    Gender : <br> <input type="radio" name="gender" value="m">Male <br>
+             <input type="radio" name="gender" value="f">Female
+             <br>
+             <br>
+       
+     <div id="input">
+        <input class="input" type="submit" name="" value="Submit">
+        <input class="input" type="reset">    
+     </div>
+        
+    </form> 
+    </div> 
+    <div class="foot">
+        {%endblock%}
+    </div>
+     
+</body>
+</html>

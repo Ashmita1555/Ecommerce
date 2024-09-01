@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #register{
+            background-color: rgb(12, 95, 95);
+            font-family: Time New Roman;
+            font-size: 24px;
+            height: auto;
+            width: 400px;
+            justify-content: center;
+            top:10%;
+            margin-top:10px;
+            margin-left:550px;
+            position: absolute;  
+            outline: solid 1px rgb(19, 52, 10); 
+        }
+        fieldset{
+            color:aliceblue ;
+        }
+        .input{
+            
+            margin: 10px;
+            height: 30px;
+            margin-left:10px;
+            font-size:20px;
+            font-family:Times New Roman;
+        }
+        
+        h1{
+            margin-left: 70px;
+            margin-top:5px;
+            text-align:center;
+        }
+        body{
+            
+        }
+        .foot{
+            margin-top:475px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <div id="register">
+    <form action="#">
+    <fieldset>
+        
+   Name : <input class="input " type="text" name="name" placeholder="Enter your name ..." >
+    <br> 
+    
+   Email: <input class="input" type="email" name="email"><br>
+   Message: <textarea name="" id="" cols="30" rows="10"></textarea>
+   <br>
+   
+
+<input class="input" type="submit" value="Send">
+<input class="input" type="reset" name="reset" value="Reset"></fieldset>
+</form>
+</div>
+<div class="foot">   
+    {%endblock%}
+    </div>    
+ 
+</body>
+</html>

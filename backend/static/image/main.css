@@ -1,0 +1,36 @@
+
+/* Style the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #ca9cc9;
+  }
+
+  /* Navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(18, 17, 17);
+    text-align: center;
+    padding-right:50px; 
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #0f0f0f;
+    color: rgb(8, 69, 150);
+  }
+
+  /* Active/current link */
+  .active {
+    background-color: #c98ab5;
+    color: rgb(11, 11, 11);
+  }
+
+  .backgroundimage{
+  background:url('/bed4.jpg') no-repeat center center/cover;
+  
+    
+    
+
+  }

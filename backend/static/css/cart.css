@@ -1,0 +1,47 @@
+#footer{
+    margin-top: 500px;
+}
+.cartTab{
+    background-color: rgb(18, 18, 18);
+    color:aliceblue;
+   
+    width:50%; 
+    margin-left:350px;
+    height:auto;
+    margin-top: 0;
+}
+
+.cartTab .listCart .item  img{
+
+width: 100%;
+
+
+}
+.item{
+    display:grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span{
+display: inline-block;
+width: 15px;
+height: 20px;
+background-color: aliceblue;
+color: rgb(155, 155, 155);
+border-radius: 50%;
+cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: aliceblue;
+}
+.listCart .item:nth-child(even){
+    background-color: rgb(51, 49, 49);
+}
+.listCart{
+    overflow: auto;
+}
